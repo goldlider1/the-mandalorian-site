@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mandalorian</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con Carrusel -->
+    <header class="container mt-4">
+        <h1 class="text-center">The Mandalorian</h1>
+        <div id="mandalorianCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/mandalorian1.jpg" class="d-block w-100" alt="Mandalorian 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/mandalorian2.jpg" class="d-block w-100" alt="Mandalorian 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/mandalorian3.jpg" class="d-block w-100" alt="Mandalorian 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mandalorianCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mandalorianCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Cuerpo con información -->
+    <main class="container mt-5">
+        <h2>Acerca de la Serie</h2>
+        <p>
+            The Mandalorian es una serie del universo de Star Wars que sigue las aventuras de un cazarrecompensas solitario en la galaxia. Conocido simplemente como "Mando", viaja con Grogu, un pequeño ser de la misma especie que Yoda, mientras se enfrenta a enemigos y descubre su destino.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Imágenes tomadas de fuentes oficiales de Star Wars.</p>
+        <p>Contacto: <a href="https://www.starwars.com" class="text-light">www.starwars.com</a></p>
+    </footer>
+
+</body>
+</html>
